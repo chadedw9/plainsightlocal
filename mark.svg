@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" width="88" height="88" role="img" aria-label="Plain Sight Local mark">
+  <rect width="88" height="88" rx="20" fill="#101820"/>
+  <path d="M18 44c10-15 24-22 26-22s16 7 26 22c-10 15-24 22-26 22S28 59 18 44z" fill="none" stroke="#FFC300" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="44" cy="44" r="9" fill="#FFC300"/>
+</svg>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plain Sight Local</title>
+<meta name="description" content="Plain Sight Local builds websites and looks after Google reviews for local trades in central Arkansas. We build the site before you ask. You look. Then you decide.">
+<meta name="theme-color" content="#101820">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 88 88'%3E%3Crect width='88' height='88' rx='20' fill='%23101820'/%3E%3Cpath d='M18 44c10-15 24-22 26-22s16 7 26 22c-10 15-24 22-26 22S28 59 18 44z' fill='none' stroke='%23FFC300' stroke-width='6' stroke-linejoin='round'/%3E%3Ccircle cx='44' cy='44' r='9' fill='%23FFC300'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Plain Sight Local",
+  "description": "Websites and Google review management for local trades in central Arkansas.",
+  "telephone": "+1-410-941-9778",
+  "areaServed": ["Central Arkansas", "Saline County AR", "Faulkner County AR", "Pulaski County AR"],
+  "url": "https://plainsightlocal.com/",
+  "priceRange": "$$"
+}
+</script>
+<style>
+  :root{--ink:#101820;--ink-2:#0A1016;--yel:#FFC300;--yel-2:#D9A400;--paper:#F7F5F0;--slate:#56606B;--line:#E4E1DA;--white:#fff}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+  a{color:var(--ink)}
+  h1,h2,h3{line-height:1.1;margin:0 0 .5rem;letter-spacing:-.015em}
+  h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:800}
+  h2{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:800}
+  h3{font-size:1.15rem;font-weight:700}
+  p{margin:0 0 1rem}
+  .wrap{width:min(1080px,92vw);margin:0 auto}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 1.4rem;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid transparent;white-space:nowrap}
+  .btn-yel{background:var(--yel);color:var(--ink)}
+  .btn-yel:hover{background:var(--yel-2)}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+  .btn-ghost:hover{background:rgba(255,255,255,.08)}
+  .btn-ink{background:var(--ink);color:#fff}
+  .btn-ink:hover{background:var(--ink-2)}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(16,24,32,.97);backdrop-filter:blur(8px);color:#fff}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:#fff;font-weight:800;font-size:1.15rem}
+  .brand svg{width:38px;height:38px}
+  .brand em{font-style:normal;color:var(--yel)}
+  .nav-links{display:flex;gap:1.4rem;font-size:.95rem}
+  .nav-links a{color:#fff;text-decoration:none;opacity:.9}
+  .nav-links a:hover{text-decoration:underline}
+  .call-top{background:var(--yel);color:var(--ink);text-decoration:none;font-weight:800;padding:.6rem 1rem;border-radius:8px;font-size:.95rem}
+
+  .hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,195,0,.06) 0 14px,transparent 14px 44px);pointer-events:none}
+  .hero .wrap{position:relative;padding:5rem 0 4.5rem;display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center}
+  .hero .kicker{color:var(--yel)}
+  .hero p.lead{font-size:1.2rem;opacity:.9;max-width:36rem}
+  .hero-ctas{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem}
+  .hero-note{margin-top:1rem;opacity:.75;font-size:.92rem}
+  .eye{width:100%;max-width:340px;margin:0 auto;display:block}
+  .kicker{font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;color:var(--yel-2);margin-bottom:.5rem}
+
+  section{padding:4.5rem 0}
+  .section-head{max-width:44rem;margin-bottom:2.2rem}
+  .section-head p{color:var(--slate);font-size:1.08rem}
+
+  .how{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.6rem;position:relative}
+  .step b.num{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--yel);color:var(--ink);font-weight:800;margin-bottom:1rem}
+  .step p{color:var(--slate);margin:0}
+
+  .offers{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+  .offer{border:1px solid var(--line);border-radius:16px;padding:2rem;background:var(--paper);display:flex;flex-direction:column}
+  .offer.featured{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .offer.featured h3,.offer.featured .price{color:#fff}
+  .offer .price{font-size:2rem;font-weight:800;margin:.4rem 0 .2rem}
+  .offer .price small{font-size:.95rem;font-weight:600;opacity:.75}
+  .offer ul{margin:1rem 0 1.4rem;padding-left:1.15rem;line-height:1.7}
+  .offer.featured ul{opacity:.92}
+  .offer .btn{margin-top:auto;justify-content:center}
+  .free{margin-top:1.4rem;background:#FFF6D6;border:1px solid #F3DF9A;border-radius:12px;padding:1rem 1.2rem;color:#5C4700;font-weight:600}
+
+  .why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .why ul{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.9rem}
+  .why li{display:flex;gap:.8rem;align-items:flex-start}
+  .why li svg{width:24px;height:24px;flex:none;color:var(--yel-2);margin-top:.15rem}
+  .why li b{display:block}
+  .why li span{color:var(--slate)}
+  .quote{background:var(--ink);color:#fff;border-radius:16px;padding:2rem}
+  .quote p{font-size:1.15rem;margin:0}
+  .quote small{display:block;margin-top:1rem;opacity:.7}
+
+  .contact{background:var(--ink);color:#fff}
+  .contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+  .contact h2{color:#fff}
+  .contact p{opacity:.9}
+  .contact-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:1.8rem}
+  .contact-card a{color:#fff;text-decoration:none;font-weight:700;font-size:1.25rem}
+  .contact-card .row{display:flex;gap:.8rem;align-items:center;margin-bottom:1rem}
+  .contact-card .row svg{width:24px;height:24px;color:var(--yel);flex:none}
+  .contact-card small{display:block;opacity:.7;font-weight:400;font-size:.9rem}
+
+  footer{background:var(--ink-2);color:#fff;padding:1.8rem 0;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem;opacity:.8}
+  footer a{color:#fff}
+
+  @media (max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;padding:3.5rem 0 3rem}
+    .eye{max-width:220px}
+    .how{grid-template-columns:1fr}
+    .offer-grid,.why .wrap,.contact .wrap{grid-template-columns:1fr}
+  }
+  @media (max-width:640px){
+    .nav-links{display:none}
+    section{padding:3.2rem 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Plain Sight Local">
+      <svg viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" rx="20" fill="#FFC300"/><path d="M18 44c10-15 24-22 26-22s16 7 26 22c-10 15-24 22-26 22S28 59 18 44z" fill="none" stroke="#101820" stroke-width="6" stroke-linejoin="round"/><circle cx="44" cy="44" r="9" fill="#101820"/></svg>
+      <span>Plain Sight <em>Local</em></span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#offers">What it costs</a>
+      <a href="#why">Why us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-top" href="tel:+14109419778">(410) 941-9778</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="kicker">Websites and Google reviews for local trades · Central Arkansas</div>
+        <h1>Your customers already trust you. Let the rest of town see it.</h1>
+        <p class="lead">You've got the five-star reviews. You've got the referrals. What you don't have is a website that works on a phone, or a Google listing that turns those reviews into calls. We fix both. Usually before you ask.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-yel" href="#how">How it works</a>
+          <a class="btn btn-ghost" href="tel:+14109419778">Call Chad</a>
+        </div>
+        <p class="hero-note">Plumbers, roofers, HVAC, electricians, tree service, concrete. If your work shows up in someone's house, we can make you show up on their phone.</p>
+      </div>
+      <svg class="eye" viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" rx="20" fill="#FFC300"/><path d="M18 44c10-15 24-22 26-22s16 7 26 22c-10 15-24 22-26 22S28 59 18 44z" fill="none" stroke="#101820" stroke-width="6" stroke-linejoin="round"/><circle cx="44" cy="44" r="9" fill="#101820"/></svg>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">How it works</div>
+        <h2>We build it first. You look. Then you decide.</h2>
+        <p>No sales call, no proposal deck, no "let me send you something." If we reach out, the website already exists.</p>
+      </div>
+      <div class="how">
+        <div class="step"><b class="num">1</b><h3>We find you on Google Maps</h3><p>We look for trades with great reviews and a website that's missing, dead, or hurting them. Then we read every review you've got.</p></div>
+        <div class="step"><b class="num">2</b><h3>We build your site and send you the link</h3><p>Your real reviews, your real services, one-tap calling, a request form. Built to look right on a phone. Nothing is published until you say so.</p></div>
+        <div class="step"><b class="num">3</b><h3>You say yes, or you keep the link</h3><p>If you like it, it's live on your own domain within five business days. If not, no hard feelings. We'll still tell you anything we spotted on your Google listing that's costing you calls.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="offers" class="offers">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">What it costs</div>
+        <h2>Two things we do. Plain prices for both.</h2>
+      </div>
+      <div class="offer-grid">
+        <div class="offer">
+          <h3>Website in a week</h3>
+          <div class="price">$750 <small>to $1,500, one time</small></div>
+          <p>Depends on how much your business does. A one-man plumber is on the low end. A roofing crew with an insurance-claims process and commercial work is on the high end.</p>
+          <ul>
+            <li>Built on your real reviews and services, mobile first</li>
+            <li>Tap-to-call on every screen, request form that emails you</li>
+            <li>Your own domain, in your name, forever</li>
+            <li>Half up front, live within 5 business days</li>
+          </ul>
+          <a class="btn btn-ink" href="#contact">Ask about your trade</a>
+        </div>
+        <div class="offer featured">
+          <h3>Review &amp; Listing Care</h3>
+          <div class="price">$99 <small>to $199 a month</small></div>
+          <p>The part that keeps the phone ringing after the site is live. Cancel any time. First month is a trial.</p>
+          <ul>
+            <li>Every new Google review answered within 24 hours, in your voice</li>
+            <li>A review-request text your crew sends after each job, plus a QR card for the truck</li>
+            <li>One Google post a week from your job photos</li>
+            <li>Listing kept accurate: hours, services, photos, website link</li>
+            <li>Hosting and edits for a site we built</li>
+            <li>A three-line report each month: new reviews, rating, calls from Google</li>
+          </ul>
+          <a class="btn btn-yel" href="#contact">Start with a month</a>
+        </div>
+      </div>
+      <div class="free">Free, always: if we spot something wrong on your Google listing while we're looking, we tell you how to fix it. No strings.</div>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <div class="wrap">
+      <div>
+        <div class="kicker">Why us</div>
+        <h2>We do the work before we ask for anything.</h2>
+        <p>Most agencies want a discovery call and a deposit before you see a thing. We think that's backwards. You're busy, you've been burned by "web guys" before, and you shouldn't have to imagine what you're buying.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><div><b>Local, and small on purpose</b><span>Central Arkansas. You talk to Chad, not a ticket queue.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><div><b>Your reviews are the product</b><span>We don't write fluffy copy about "excellence." We quote your customers.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><div><b>You own everything</b><span>Domain in your name, files you can take anywhere, no hostage situations.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><div><b>Plain prices, plain talk</b><span>No packages with names. Two services, a price range for each, and a straight answer about which one you actually need.</span></div></li>
+        </ul>
+      </div>
+      <div class="quote">
+        <p>"A homeowner reads your reviews, decides you're the one, taps your listing, and finds nothing. That's the leak. We plug it."</p>
+        <small>Chad, Plain Sight Local</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div>
+        <div class="kicker">Contact</div>
+        <h2>Got a text from us? Or want us to look at your listing?</h2>
+        <p>Either way, the fastest answer is a text or a call. Tell us your business name and town. We'll tell you what we see on your Google listing, free, whether or not you ever hire us.</p>
+      </div>
+      <div class="contact-card">
+        <div class="row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg><div><a href="tel:+14109419778">(410) 941-9778</a><small>Call or text. Texts get answered fastest.</small></div></div>
+        <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg><div><a href="mailto:chadedw9@gmail.com">Email Chad</a><small>hello@plainsightlocal.com coming soon</small></div></div>
+        <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><span style="font-weight:700;font-size:1.1rem">Central Arkansas</span><small>Saline, Faulkner and Pulaski counties, and wherever the good reviews are.</small></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Plain Sight Local. Get found. Get called.</span>
+    <span><a href="tel:+14109419778">(410) 941-9778</a></span>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
