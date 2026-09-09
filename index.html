@@ -101,6 +101,13 @@
   .contact-card .row svg{width:24px;height:24px;color:var(--yel);flex:none}
   .contact-card small{display:block;opacity:.7;font-weight:400;font-size:.9rem}
 
+
+  .addons{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.6rem}
+  .addon{background:var(--paper);border:1px dashed var(--line);border-radius:14px;padding:1.4rem}
+  .addon h3{display:flex;justify-content:space-between;gap:1rem;align-items:baseline}
+  .addon h3 small{font-size:.95rem;font-weight:700;color:var(--slate);white-space:nowrap}
+  .addon p{color:var(--slate);margin:0}
+  @media (max-width:640px){.addons{grid-template-columns:1fr}}
   footer{background:var(--ink-2);color:#fff;padding:1.8rem 0;font-size:.9rem}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem;opacity:.8}
   footer a{color:#fff}
@@ -201,6 +208,12 @@
           </ul>
           <a class="btn btn-yel" href="#contact">Start your free month</a>
         </div>
+      </div>
+
+      <div class="kicker" style="margin-top:2.6rem">Add-ons, once the basics are working</div>
+      <div class="addons">
+        <div class="addon"><h3>Website assistant <small>$50 / month</small></h3><p>A chat box on your site that answers the questions people ask at 10 pm: do you do this, how fast, what does it roughly cost. It takes their name and number and you call back. It says up front that it's an assistant, not a person.</p></div>
+        <div class="addon"><h3>Back-office setup <small>$250 one time</small></h3><p>A simple job and quote tracker in Google Sheets, built around how you actually work: open quotes, jobs in progress, unpaid invoices, who's due a review request. Shared with your office or your phone. No software to learn.</p></div>
       </div>
       <div class="free">Free, always: if we spot something wrong on your Google listing while we're looking, we tell you how to fix it. No strings.</div>
     </div>
